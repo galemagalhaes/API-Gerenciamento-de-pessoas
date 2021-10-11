@@ -18,13 +18,16 @@ Spring Boot DevTools;
 * Spring Data JPA;
 * Spring Boot Actuator;
 * H2 Data Base.
-* 
+
+
 
 **Configuração do Intellij** com a inclusão do JDK 11 na estrutura do projeto (Project Structure) e a configuração de execução e debug selecionando a classe principal de entrada coma a anotação @SpringBoot. Ainda foram utilizadas e explicadas as seguintes anotações:
 
 <ins>*@RestController*</ins> - controlador acessado através de uma API REST
-*@RequestMapping* - caminho principal de acesso (nível 1 de maturidade Richardson)
-*@GetMapping* - verbo HTTP Get
+
+<ins>*@RequestMapping*</ins> - caminho principal de acesso (nível 1 de maturidade Richardson)
+
+<ins>*@GetMapping*</ins> - verbo HTTP Get
 
 
 **Modelagem de dados** tabela Person e Phone e seus relacionamentos.
@@ -32,11 +35,16 @@ Spring Boot DevTools;
 
 **Uso do Lombok** com as seguintes anotações:
 
-*@Data* - insere automaticamente getters e setters;
-*@Builder* - padrão de projeto para construção;
-*@AllArgsConstructor* e *@NoArgsConstructor* - para inserir construtores;
-*@Entity* - para a identidade;
-*@Id* com *@GeneratedValue* - para gerar Id incremental pelo banco de dados.
+<ins>*@Data*</ins> - insere automaticamente getters e setters;
+
+<ins>*@Builder*</ins> - padrão de projeto para construção;
+
+<ins>*@AllArgsConstructor*</ins> e <ins>*@NoArgsConstructor*</ins> - para inserir construtores;
+
+<ins>*@Entity*</ins> - para a identidade;
+
+<ins>*@Id*</ins> com <ins>*@GeneratedValue*</ins> - para gerar Id incremental pelo banco de dados.
+
 
 O uso do Lombok deixa o código mais elegente e facilita sua manutenção, reduz o tamanho do código deixando-o mais limpo. Outras anotações do Lombok podem ser acessadas no link de documentação na sessão de links no final deste documento.
 
