@@ -1,4 +1,3 @@
-
 <h1>Entrega do Projeto</h1>
 Este projeto foi realizado como parte do Bootcamp "GFT Java & AWS Developer". 
 
