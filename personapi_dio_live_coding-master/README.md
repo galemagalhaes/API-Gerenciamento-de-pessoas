@@ -2,11 +2,15 @@
 <h1>Entrega do Projeto</h1>
 Este projeto foi realizado como parte do Bootcamp "GFT Java & AWS Developer". 
 
-Inicialmente foi feita a configuração do ambiente de desenvolvimento utilizando a ferramenta SDKMan!, cuja função é facilitar o uso de diferentes versões do Java.
-Após a configuração foram passados conceitos sobre o padrão de arquitetura REST e explicada a diferença entre REST e RESTful. Esse último se refere ao nível de maturidade
+As etapas desse projeto serão descritas em seguida:
+
+***Configuração do ambiente*** de desenvolvimento utilizando a ferramenta SDKMan!, cuja função é facilitar o uso de diferentes versões do Java.
+
+
+***Conceitos sobre o padrão de arquitetura REST*** e explicada a diferença entre REST e RESTful. Esse último se refere ao nível de maturidade
 seguindo o padrão. Esses níveis vão de 0 a 3 (portanto são 4 níveis) no modelo de maturidade Richardson.
 
-O próximo passo foi criar o projeto inicial, para isso foi usado o Spring Initializr. Para este projeto foram usadas as dependências:
+***Criação o projeto inicial*** usando o Spring **Initializr**. Para este projeto foram usadas as dependências:
 * Spring Boot DevTools;
 * Lombok;
 * Spring Web;
@@ -14,27 +18,27 @@ O próximo passo foi criar o projeto inicial, para isso foi usado o Spring Initi
 * Spring Boot Actuator;
 * H2 Data Base.
 
-Em seguida foi feita a configuração do Intellij, com a inclusão do JDK 11 na estrutura do projeto (Project Structure).
-Depois foi feita também a configuração de execução e debug selecionando a classe principal de entrada coma a anotação @SpringBoot.
+***Configuração do Intellij*** com a inclusão do JDK 11 na estrutura do projeto (Project Structure) e a configuração de 
+execução e debug selecionando a classe principal de entrada coma a anotação <ins>*@SpringBoot*</ins>.
 Ainda foram utilizadas e explicadas as seguintes anotações:
-* @RestController - controlador acessado através de uma API REST
-* @RequestMapping - caminho principal de acesso (nível 1 de maturidade Richardson)
-* @GetMapping - verbo HTTP Get
+* <ins>*@RestController*</ins> - controlador acessado através de uma API REST
+* <ins>*@RequestMapping*</ins> - caminho principal de acesso (nível 1 de maturidade Richardson)
+* <ins>*@GetMapping*</ins> - verbo HTTP Get
 
-Na sequência foi demonstrado como fazer deploy na nuvem com Heroko e habilitado deploy automático, pois a proposta era fazer 
+***Deploy na nuvem com Heroko*** e habilitado deploy automático, pois a proposta era fazer 
 as entregas do projeto por partes. O deploy feito a cada funcionalidade completa. Foi necessário fazer uma configuração
 para o Heroko, pois, por padrão (à época da aula), ele detecta até Java 8, portanto, versões mais recentes necessitam da 
 seguinte configuração:
-* Sistem Properties --> java.runtime.version=11
+* <ins>Sistem Properties ==> java.runtime.version=11</ins>
 
-A próxima etapa foi fazer a modelagem de dados.
+***Modelagem de dados*** tabela Person e Phone e seus relacionamentos.
 
-Foi demonstrado o uso do Lombok com as seguintes anotações:
-* @Data - insere automaticamente getters e setters;
-* @Builder - padrão de projeto para construção;
-* @AllArgsConstructor e @NoArgsConstructor - para inserir construtores;
-* @Entity - para a identidade;
-* @Id com @GeneratedValue - para gerar Id incremental pelo banco de dados.
+***Uso do Lombok*** com as seguintes anotações:
+* <ins>*@Data*</ins> - insere automaticamente getters e setters;
+* <ins>*@Builder*</ins> - padrão de projeto para construção;
+* <ins>*@AllArgsConstructor*</ins> e <ins>*@NoArgsConstructor*</ins> - para inserir construtores;
+* <ins>*@Entity*</ins> - para a identidade;
+* <ins>*@Id*</ins> com <ins>*@GeneratedValue*</ins> - para gerar Id incremental pelo banco de dados.
 
 O uso do Lombok deixa o código mais elegente e facilita sua manutenção, reduz o tamanho do código deixando-o mais limpo.
 Outras anotações do Lombok podem ser acessadas no link de documentação na sessão de links no final deste documento.
